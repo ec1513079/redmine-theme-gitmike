@@ -1,15 +1,26 @@
 @import url(../../../stylesheets/application.css);
 /*
+<<<<<<< HEAD
+	gitmike
+	This is github-like theme for Redmine.
+	It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
+	@see https://github.com/makotokw/redmine-theme-gitmike
+	@license GPL3 License
+*/
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, div, p, blockquote, th, td, form, fieldset, input, textarea, select, button, pre { font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif; }
+
+body { color: #333333; background-color: #fff; line-height: 1.4; }
+=======
  * gitmike
  * This is github-like theme for Redmine.
  * It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
  * @see https://github.com/makotokw/redmine-theme-gitmike
  * @license GPL3 License
  */
-/* body { color: #333; background-color: #fff; line-height: 1.4; } */
-body { color: #333333; background-color: #fff; line-height: 1.4; }
+body { color: #333; background-color: #fff; line-height: 1.4; }
 
 #content h1, h2, h3, h4 { color: #333; }
+>>>>>>> upstream/master
 
 #header { font: 13px Helvetica, arial, freesans, clean, sans-serif; background: #fff; padding: 4px 8px 10px 6px; height: auto; }
 #header a { color: #4183c4; }

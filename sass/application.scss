@@ -8,9 +8,13 @@
 @import 'ja';
 
 body {
-  color: #333333;
+  color: #333;
   background-color: #fff;
   line-height: 1.4;
+}
+
+#content h1, h2, h3, h4 {
+  color: #333;
 }
 
 #header {
@@ -82,15 +86,21 @@ div {
   }
 }
 
-#errorExplanation, div.flash, .nodata, .warning, .conflict {
-  padding: 8px 35px 8px 14px;
+#errorExplanation,
+div.flash,
+.nodata,
+.warning,
+.conflict {
+  padding: 8px 35px 8px 30px;
   margin-bottom: 20px;
   font-size: 1.1em;
   border: 1px solid;
   @include border-radius(4px);
 }
 
-#errorExplanation, .nodata, .warning {
+#errorExplanation,
+.nodata,
+.warning {
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
   color: #c09853;
@@ -155,8 +165,7 @@ div#content {
   }
 }
 
-/*.controller-documents.action-index div#content  h2, */
-
+// .controller-documents.action-index div#content  h2,
 .controller-timelog.action-index div#content h2, .controller-time_entry_reports.action-report div#content h2, .controller-boards.action-show div#content h2, .controller-messages.action-show div#content h2, .controller-boards.action-show div#content div#add-message h2 {
   @include border-top-left-radius(0px);
   @include border-top-right-radius(0px);
@@ -175,7 +184,7 @@ div#content {
 
 div#content h2.contacts_header {
   padding-bottom: 10px;
-  /*	white-space: nowrap;*/
+  /* white-space: nowrap;*/
 }
 
 p.breadcrumb {
@@ -208,19 +217,6 @@ p.subtitle {
 div.filters h2 .scope_title a {
   color: #222;
   text-decoration: none;
-}
-
-.wiki h1 {
-  font-size: 28px;
-}
-
-h2, .wiki h1, h3, .wiki h2 {
-  color: #222;
-}
-
-div#content > div.wiki {
-  padding: 10px;
-  padding-top: 20px;
 }
 
 #header {
@@ -290,7 +286,7 @@ div {
   }
 }
 
-/* Headers */
+// Headers
 
 h2, h3, h4 {
   border-bottom: 0px;
@@ -311,13 +307,13 @@ h2, h3, h4 {
   }
 }
 
-/* Menu */
+// Menu
 
 #main-menu {
   left: 0px;
   width: 100%;
-  //height: 40px;
-  /*	overflow: hidden;*/
+  // height: 40px;
+  // overflow: hidden;
   background: #FAFAFA;
   @include background(linear-gradient(top, #fafafa, #eaeaea));
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
@@ -393,44 +389,11 @@ img.gravatar {
   @include box-shadow(0px 3px 5px rgba(0, 0, 0, 0.05));
 }
 
-.wiki {
-  img {
-    max-width: 100%;
-  }
-  table img {
-    width: 100%;
-  }
-}
-
-div.wiki pre, .wiki pre {
-  padding: 6px 10px;
-  @include border-radius(3px);
-}
-
-.controller-wiki div#content > div.contextual {
-  margin-top: 3px;
-}
-
-div#content > div.wiki {
-  padding-top: 15px;
-}
-
-ul.projects {
-  &.root {
-    padding: 10px;
-  }
-  a.project {
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-}
+@import 'wiki';
+@import 'projects';
 
 div.journal .details {
-  border: 1px solid white;
-  &:hover {
-    background: #FFD;
-    border: 1px solid silver !important;
-  }
+  padding-left: 30px;
 }
 
 #context-menu {
@@ -489,7 +452,7 @@ div.modal {
 
 @import 'login';
 
-/*Contacts*/
+// Contacts
 
 div.filters .live_search {
   margin-left: 11px !important;
@@ -582,7 +545,7 @@ body {
   }
 }
 
-/*Invoices*/
+// Invoices
 
 table.invoice-lines {
   tbody tr.line-data:hover {
